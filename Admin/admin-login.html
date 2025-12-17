@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GiveHelp — Admin Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { primary: {50:'#000000',100:'#000000',600:'#000000',700:'#808080'} } } } }
+  </script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-6">
+  <div class="max-w-md bg-white p-8 rounded-2xl shadow">
+    <h1 class="text-2xl font-bold text-center text-gray-900">Admin Panel</h1>
+    <p class="text-sm text-gray-600 text-center mt-1">Sign in to manage campaigns & donations</p>
+
+    <form class="mt-6 space-y-4">
+      <input type="text" class="w-full p-3 border rounded-md" placeholder="Admin email" />
+      <input type="password" class="w-full p-3 border rounded-md" placeholder="Password" />
+      <button class="w-full bg-primary-600 text-white py-3 rounded-lg font-medium"><a href="/Admin/admin-dashboard.html">Login</a></button>
+    </form>
+  </div>
+</body>
+</html>

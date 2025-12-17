@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GiveHelp — Admin-Manage Donations</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { primary: {50:'#000000',100:'#000000',600:'#000000',700:'#808080'} } } } }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<div class="min-h-screen flex">
+  <aside class="w-64 bg-white border-r p-6 hidden lg:block">
+    <div class="font-bold text-lg text-primary-600 mb-6">GiveHelp — Admin</div>
+      <nav class="space-y-2 text-sm text-gray-700">
+      <a href="admin-dashboard.html" class="block px-3 py-2 rounded-md hover:bg-gray-300">Dashboard</a>
+      <a href="admin-manage-projects.html" class="block px-3 py-2 rounded-md hover:bg-gray-300">Campaigns</a>
+      <a href="admin-manage-donations.html" class="block px-3 py-2 rounded-md bg-primary-50 text-white">Donations</a>
+      <a href="admin-create-project.html" class="block px-3 py-2 rounded-md hover:bg-gray-300">Add Campaigns</a>
+      <a href="admin-login.html" class="block px-3 py-2 rounded-md hover:bg-gray-300">Logout</a>
+
+
+    </nav>
+  </aside>
+  <main class="flex-1 max-w-6xl mx-auto px-6 py-8"> 
+    <div class="mt-6 bg-white rounded-2xl p-4 border border-gray-100 shadow-sm">
+      <h2 class="font-semibold">Donations</h2>
+      <table class="w-full text-sm mt-4">
+        <thead class="bg-gray-50 text-left text-gray-600">
+          <tr><th class="p-3">Donor</th><th class="p-3">Campaign</th><th class="p-3">Amount</th><th class="p-3">Date</th></tr>
+        </thead>
+        <tbody>
+          <tr class="border-t"><td class="p-3">Anita</td><td class="p-3">Help Priya</td><td class="p-3">₹500</td><td class="p-3">Nov 20,2025</td></tr>
+        </tbody>
+        <tbody>
+          <tr class="border-t"><td class="p-3">Anita</td><td class="p-3">Help Priya</td><td class="p-3">₹500</td><td class="p-3">Nov 20,2025</td></tr>
+        </tbody>
+        <tbody>
+          <tr class="border-t"><td class="p-3">Anita</td><td class="p-3">Help Priya</td><td class="p-3">₹500</td><td class="p-3">Nov 20,2025</td></tr>
+        </tbody>
+        <tbody>
+          <tr class="border-t"><td class="p-3">Anita</td><td class="p-3">Help Priya</td><td class="p-3">₹500</td><td class="p-3">Nov 20,2025</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+</body>
+</html>

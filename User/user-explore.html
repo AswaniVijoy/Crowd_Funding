@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GiveHelp — Explore</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { primary: {50:'#000000',100:'#000000',600:'#000000',700:'#808080'} } } }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800 ">
+
+<header class="bg-white border-b">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="flex items-center justify-between h-20">
+      <a href="user-home.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-primary-50 flex items-center justify-center text-primary-600 font-bold text-white text-2xl">G</div>
+        <span class="font-extrabold text-lg">GiveHelp</span></a>
+      <nav class="hidden sm:flex gap-6 text-sm text-gray-700">
+        <a href="user-home.html" class="hover:text-primary-600">Home</a>
+        <a href="user-explore.html" class="text-primary-600 font-medium">Explore</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="max-w-5xl mx-auto px-6 pt-10 pb-16">
+
+  <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+    <h1 class="text-2xl font-bold">Explore Causes</h1>
+
+    <div class="flex gap-3">
+      <select class="px-3 py-2 border rounded-md bg-white text-sm">
+        <option>All categories</option>
+        <option>Medical</option>
+        <option>Education</option>
+        <option>Emergency</option>
+      </select>
+      <select class="px-3 py-2 border rounded-md bg-white text-sm">
+        <option>Latest</option>
+        <option>Most Funded</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- grid -->
+  <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- card -->
+    <article class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden hover:scale-110">
+      <div class="h-40 bg-gray-100 ">
+        <img src="/images/blood.jpg" alt="campaign" class="w-full h-full object-cover">
+      </div>
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-900">Blood Donation Fund</h3>
+        <p class="text-sm text-gray-600 mt-1">If you really want to lend a hand, lend an arm.</p>
+        <div class="mt-4">
+          <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden"><div class="h-2 bg-primary-600 w-[42%]" ></div></div>
+          <div class="mt-2 flex justify-between text-sm text-gray-600"><span>₹42,000</span><a href="user-campaign.html" class="text-primary-600"><button class="bg-primary-100 rounded-md text-white pl-4 pr-4 p-2 hover:bg-primary-700">Donate</button></a></div>
+        </div>
+      </div>
+    </article>
+    <article class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden hover:scale-110">
+      <div class="h-40 bg-gray-100 ">
+        <img src="/images/gaza.jpg" alt="campaign" class="w-full h-full object-cover">
+      </div>
+
+
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-900">Help Gaza</h3>
+        <p class="text-sm text-gray-600 mt-1">Your donation makes a direct impact.They want us.</p>
+        <div class="mt-4">
+          <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+            <div class="h-2 bg-primary-600 w-[42%]" ></div>
+          </div>
+          <div class="mt-2 flex justify-between text-sm text-gray-600"><span>₹42,000</span><a href="user-campaign.html" class="text-primary-600">
+            <button class="bg-primary-100 rounded-md text-white pl-4 pr-4 p-2 hover:bg-primary-700">Donate</button></a></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden hover:scale-110">
+      <div class="h-40 bg-gray-100">
+        <img src="/images/hurricane.jpg" alt="campaign" class="w-full h-full object-cover">
+
+      </div>
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-900">Hurricane Andrew</h3>
+        <p class="text-sm text-gray-600 mt-1">Immediate relief supplies for families affected by hurricane.</p>
+        <div class="mt-4">
+          <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden"><div class="h-2 bg-primary-600 w-[42%]" ></div></div>
+          <div class="mt-2 flex justify-between text-sm text-gray-600"><span>₹68,000</span><a href="user-campaign.html" class="text-primary-600"><button class="bg-primary-100 rounded-md text-white pl-4 pr-4 p-2 hover:bg-primary-700">Donate</button></a></div>
+        </div>
+      </div>
+    </article>
+  </div>
+
+ 
+
+</main>
+
+<footer class="text-center py-8 text-sm text-gray-600">
+  <div class="max-w-5xl mx-auto px-6">© 2025 GiveHelp</div>
+</footer>
+</body>
+</html>
